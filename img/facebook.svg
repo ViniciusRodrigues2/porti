@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="165px" height="165px" viewBox="0 0 165 165" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="123.75" y2="123.75" id="gradient_1">
+      <stop offset="0%" stop-color="#183C75" />
+      <stop offset="98.14815%" stop-color="#248F8F" />
+    </linearGradient>
+    <path d="M0 0L165 0L165 165L0 165L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Facebook-icon">
+    <path d="M0 0L165 0L165 165L0 165L0 0Z" id="Background" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M82.5 20.625C48.3885 20.625 20.625 48.3885 20.625 82.5C20.625 116.612 48.3885 144.375 82.5 144.375C116.612 144.375 144.375 116.612 144.375 82.5C144.375 48.3885 116.612 20.625 82.5 20.625L82.5 20.625ZM82.5 30.9375C111.038 30.9375 134.063 53.9617 134.063 82.5C134.063 108.422 115.045 129.738 90.174 133.438L90.174 97.5357L104.857 97.5357L107.163 82.6208L90.174 82.6208L90.174 74.4736C90.174 68.2809 92.2085 62.7814 97.999 62.7814L107.304 62.7814L107.304 49.7699C105.67 49.5482 102.211 49.0649 95.6726 49.0649C82.0189 49.0649 74.0204 56.2733 74.0204 72.7011L74.0204 82.6208L59.9817 82.6208L59.9817 97.5357L74.0204 97.5357L74.0204 133.307C49.5457 129.271 30.9375 108.142 30.9375 82.5C30.9375 53.9617 53.9617 30.9375 82.5 30.9375L82.5 30.9375Z" id="Shape" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
