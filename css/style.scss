@@ -279,4 +279,70 @@ body{
     top: 92%;
     right: 0;
 }
+
+
+
+.container-principal .projetc-realy{
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-principal .projetc-realy .container-realy-ctn{
+    margin-top: 5em;
+}
+.container-principal .projetc-realy .container-realy-ctn .realy-ctn-title h2{
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(45deg,#5491DC,
+    #4233A0);
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+}
+.cards-realy-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cards-realy-container .card{
+    display: flex;
+    flex-direction: column;
+    align-self: normal;
+    color: white;
+    width: 350px;
+    margin-top: 5em;
+    border: 2px solid;
+    border-image: linear-gradient(160deg,#5491DC,#4233A0);
+    border-image-slice: 1;
+    gap: 20px;
+}
+.image-realy{
+    max-width: 350px;
+    width: 100%;
+}
+.image-realy img{
+    width: 100%;
+}
+.realy-contents{
+    padding-left: 20px;
+}
+.realy-contents .realy-description p{
+    font-size: clamp(1em,1.1em,.70em);
+    color:#b1b1b1#033457;
+    padding: 10px 0;
+}
+.realy-contents .realy-btn{
+    display: block;
+    margin-top: 20px;
+}
+.realy-contents .realy-btn a{
+    padding: 10px 40px;
+    background-color: #4233A0;
+    color: #b1b1b1;
+    border: 2px solid;
+    border-image: linear-gradient(40deg,#356094,#5c4dbb);
+    border-image-slice: 1;
+}
 // END SASS CSS
