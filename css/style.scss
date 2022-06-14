@@ -286,6 +286,10 @@ body{
     max-width: 920px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container-principal .projetc-realy .container-realy-ctn{
@@ -301,22 +305,22 @@ body{
 }
 .cards-realy-container{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     gap: 20px;
 }
 .cards-realy-container .card{
     display: flex;
-    flex-direction: column;
-    align-self: normal;
     color: white;
     width: 350px;
+    align-items: center;
+    flex-direction: column;
     margin-top: 5em;
     border: 2px solid;
     border-image: linear-gradient(160deg,#5491DC,#4233A0);
     border-image-slice: 1;
-    gap: 20px;
+    align-self: normal;
 }
 .image-realy{
     max-width: 350px;
@@ -333,16 +337,24 @@ body{
     color:#b1b1b1#033457;
     padding: 10px 0;
 }
-.realy-contents .realy-btn{
-    display: block;
-    margin-top: 20px;
-}
 .realy-contents .realy-btn a{
-    padding: 10px 40px;
-    background-color: #4233A0;
-    color: #b1b1b1;
-    border: 2px solid;
-    border-image: linear-gradient(40deg,#356094,#5c4dbb);
-    border-image-slice: 1;
+   display: inline-block;
+   padding: 10px 40px;
+   background: linear-gradient(65deg,#4233A0,#6B2A6E);
+    margin: 10px 0;
+    color: #a3bec1;
+    font-size: clamp(1.1em,1.1em,.90em);
+    text-transform: uppercase;
+}
+
+.actions-realy{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.width{
+    width: 40px;
+    margin-right: 35px;
+    padding: 6em 0;
+    cursor: pointer;
 }
 // END SASS CSS
