@@ -36,9 +36,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     height: 10vh;
     padding: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: #000e24a6;
 }
 .container-header .menu-desktop{
     display: none;
@@ -64,20 +66,20 @@ body{
 
 .container-header .nav-container .menu-mobile{
     display: block;
-    position:absolute;
-    width: 100vw;
-    height: 0;
-    overflow: hidden;
+    position:fixed;
+    width: 0;
+    height: calc(100vh - 20vh);
+    overflow: auto;
     top: 10vh;
-    left: 0;
+    right: 0;
     margin: 0 auto;
-    background-color: #000814;
+    background-color: #000e24d0;
     text-align: center;
     transition: all .3s ease;
     z-index: 1000;
 }
 .container-header .nav-container .menu-mobile.view{
-    height:calc(100vh - 10vh);
+    width: 50vw;
     overflow: auto;
 }
 
@@ -183,11 +185,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position:relative;
 }
 .estudy-show .agroup-actions-container .card .card-progress span{
     color: transparent;
     text-align: end;
-    position: relative;
     background: linear-gradient(45deg,#c25917,#DC8854);
     -webkit-background-clip: text;
 
@@ -206,7 +208,7 @@ body{
     height: 2px;
     background:#033457;
     position: absolute;
-    top: 19px;
+    top: 92%;
     right: 0;
 }
 
@@ -238,7 +240,7 @@ body{
     height: 2px;
     background:#033457;
     position: absolute;
-    top: 19px;
+    top: 92%;
     right: 0;
 }
 
@@ -274,7 +276,7 @@ body{
     height: 2px;
     background:#033457;
     position: absolute;
-    top: 19px;
+    top: 92%;
     right: 0;
 }
 // END SASS CSS
