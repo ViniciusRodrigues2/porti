@@ -184,8 +184,8 @@ body{
 .estudy-show .agroup-actions-container .card .card-progress{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position:relative;
+    align-items: flex-end;
+    justify-content: center;
 }
 .estudy-show .agroup-actions-container .card .card-progress span{
     color: transparent;
@@ -194,22 +194,48 @@ body{
     -webkit-background-clip: text;
 
 }
-.estudy-show .agroup-actions-container .card .card-progress span::after{
-    content: '';
-    display: block;
+.estudy-show .agroup-actions-container .card .card-progress .bar{
     width: 100px;
     height: 2px;
-    background: #C25917;
+    background-color: #033457;
+
 }
-.estudy-show .agroup-actions-container .card .card-progress span::before{
+
+.estudy-show .agroup-actions-container .card .card-progress .bar::after{
     content: '';
-    display: block;
-    width: 25px;
+    width: 75px;
     height: 2px;
-    background:#033457;
-    position: absolute;
-    top: 92%;
-    right: 0;
+    background-color: #C25917;
+    display: block;
+}
+.estudy-show .agroup-actions-container .card:nth-child(2) .card-progress .bar{
+    width: 100px;
+    height: 2px;
+    background-color: #033457;
+
+}
+
+.estudy-show .agroup-actions-container .card:nth-child(2) .card-progress .bar::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #4877B1;
+    display: block;
+}
+
+.estudy-show .agroup-actions-container .card:nth-child(3) .card-progress .bar{
+    width: 100px;
+    height: 2px;
+    background-color: #033457;
+
+}
+
+.estudy-show .agroup-actions-container .card:nth-child(3) .card-progress .bar::after{
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: #DFD329;
+    display: block;
 }
 
 .container-principal .estudos-container .estudy-show .agroup-actions-container .card:nth-child(2) .card-title h3{
@@ -225,23 +251,6 @@ body{
     background: linear-gradient(45deg,#4877B1,#27B7DE);
     -webkit-background-clip: text;
 
-}
-.estudy-show .agroup-actions-container .card:nth-child(2) .card-progress span::after{
-    content: '';
-    display: block;
-    width: 100px;
-    height: 2px;
-    background: #27B7DE;
-}
-.estudy-show .agroup-actions-container .card:nth-child(2) .card-progress span::before{
-    content: '';
-    display: block;
-    width: 52px;
-    height: 2px;
-    background:#033457;
-    position: absolute;
-    top: 92%;
-    right: 0;
 }
 
 
@@ -261,25 +270,6 @@ body{
     -webkit-background-clip: text;
 
 }
-.estudy-show .agroup-actions-container .card:nth-child(3) .card-progress span::after{
-    content: '';
-    display: block;
-    width: 100px;
-    height: 2px;
-    background: #DFD329;
-}
-
-.estudy-show .agroup-actions-container .card:nth-child(3) .card-progress span::before{
-    content: '';
-    display: block;
-    width: 75px;
-    height: 2px;
-    background:#033457;
-    position: absolute;
-    top: 92%;
-    right: 0;
-}
-
 
 
 .container-principal .projetc-realy{
@@ -304,18 +294,10 @@ body{
     text-transform: uppercase;
 }
 .cards-realy-container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,300px));
 }
 .cards-realy-container .card{
-    display: flex;
-    color: white;
-    width: 350px;
-    align-items: center;
-    flex-direction: column;
     margin-top: 5em;
     border: 2px solid;
     border-image: linear-gradient(160deg,#5491DC,#4233A0);
@@ -323,7 +305,7 @@ body{
     align-self: normal;
 }
 .image-realy{
-    max-width: 350px;
+    max-width: 300px;
     width: 100%;
 }
 .image-realy img{
@@ -333,28 +315,31 @@ body{
     padding-left: 20px;
 }
 .realy-contents .realy-description p{
-    font-size: clamp(1em,1.1em,.70em);
+    font-size: clamp(.90em,1.1em,.90em);
     color:#b1b1b1#033457;
     padding: 10px 0;
+    color: #a3bec1;
 }
 .realy-contents .realy-btn a{
    display: inline-block;
-   padding: 10px 40px;
+   padding: 10px 30px;
    background: linear-gradient(65deg,#4233A0,#6B2A6E);
     margin: 10px 0;
     color: #a3bec1;
-    font-size: clamp(1.1em,1.1em,.90em);
+    font-size: clamp(1em,1.1em,.90em);
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
-.actions-realy{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.projetc-realy .actions-realy{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 10%;
 }
-.width{
-    width: 40px;
-    margin-right: 35px;
-    padding: 6em 0;
-    cursor: pointer;
+.actions-realy img{
+    max-width: 35px;
+    width: 100%;
 }
 // END SASS CSS
