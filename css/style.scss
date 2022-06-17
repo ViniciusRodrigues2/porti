@@ -39,8 +39,8 @@ body{
     height: 10vh;
     padding: 0;
     position: fixed;
-    width: 100vw;
-    background-color: #000e24a6;
+    width: 100%;
+    background-color: #080c2c;
 }
 .container-header .menu-desktop{
     display: none;
@@ -159,32 +159,34 @@ body{
 }
 .container-principal .estudos-container .estudy-show .agroup-actions-container{
     margin-top: 2em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit(),minmax(300px,1fr));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .container-principal .estudos-container .estudy-show .agroup-actions-container .card{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 256px;
-    height: auto;
+    max-width: 300px;
     border: 2px solid;
     border-image: linear-gradient(160deg,#5491DC,#4233A0);
     border-image-slice: 1;
-    margin-bottom: 4em;
+    margin: 1em;
     padding: 20px;
-    flex:1;
     position: relative;
 }
 .container-principal .estudos-container .estudy-show .agroup-actions-container .card .card-title h3{
     background-image: linear-gradient(45deg,#DC8854,#C25917);
     color: transparent;
     -webkit-background-clip: text;
+    font-size: 1.14em;
 }
 .estudy-show .agroup-actions-container .card .card-progress{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .estudy-show .agroup-actions-container .card .card-progress span{
@@ -274,7 +276,6 @@ body{
 
 .container-principal .projetc-realy{
     max-width: 920px;
-    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -292,20 +293,24 @@ body{
     #4233A0);
     -webkit-background-clip: text;
     text-transform: uppercase;
+    font-size: clamp(1.3em 1.2em 3.3em);
 }
 .cards-realy-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,300px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .cards-realy-container .card{
-    margin-top: 5em;
+    max-width: 300px;
+    flex: 1;
+    margin: 3em;
     border: 2px solid;
     border-image: linear-gradient(160deg,#5491DC,#4233A0);
     border-image-slice: 1;
-    align-self: normal;
 }
 .image-realy{
-    max-width: 300px;
+    max-width: 500px;
     width: 100%;
 }
 .image-realy img{
@@ -320,26 +325,34 @@ body{
     padding: 10px 0;
     color: #a3bec1;
 }
-.realy-contents .realy-btn a{
-   display: inline-block;
-   padding: 10px 30px;
-   background: linear-gradient(65deg,#4233A0,#6B2A6E);
-    margin: 10px 0;
-    color: #a3bec1;
-    font-size: clamp(1em,1.1em,.90em);
-    text-transform: uppercase;
-    border-radius: 5px;
+.realy-contents .realy-btn{
+   display: flex;
+   align-items: center;
+   justify-content:flex-start;
+   flex-wrap: wrap;
+   flex: 1;
+   max-width: 200px;
 }
-
+.realy-contents .realy-btn a{
+    max-width: 90px;
+    color: #a3bec2;
+    padding: .75rem .90rem;
+    text-align: left;
+    background: linear-gradient(65deg,#4233A0,#6B2A6E);
+    margin-bottom: 1rem;
+    flex: 1;
+    text-transform: uppercase;
+    font-size: .90em;
+}
 .projetc-realy .actions-realy{
     display: flex;
-    width: 100%;
+    align-items: center;
     justify-content: center;
-    gap: 5%;
-    margin-top: 10%;
+    flex-wrap: wrap;
 }
 .actions-realy img{
-    max-width: 35px;
-    width: 100%;
+    max-width: 50px;
+    flex: 1;
+    margin: 0 25px;
 }
 // END SASS CSS
