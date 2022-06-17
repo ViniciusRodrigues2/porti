@@ -112,13 +112,20 @@ body {
 }
 
 .container-principal .sobre-mim .container-ctn .image-ctn {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 .container-principal .sobre-mim .container-ctn .image-ctn img {
-  width: 100%;
+  max-width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .container-principal .container-ctn .ctn-texts {
@@ -127,11 +134,27 @@ body {
 
 .container-principal .container-ctn .ctn-texts .contents-titles h2 {
   color: #b1b1b1;
-  font-size: clamp(1.3em, 1.1em, 0.9em);
+  font-size: clamp(1.3em, 1.5em, 3em);
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .container-principal .container-ctn .ctn-texts .contents-titles h2 > span {
-  color: #61A5C2;
+  color: transparent;
+  background: -webkit-gradient(linear, right top, left top, from(#248f8f), to(#3a789c));
+  background: linear-gradient(to left, #248f8f, #3a789c);
+  -webkit-background-clip: text;
+}
+
+.container-principal .container-ctn .ctn-texts .contents-titles h2::after {
+  content: '';
+  width: 20%;
+  height: 2px;
+  display: block;
+  background-color: #113158;
+  text-align: center;
+  margin: 12px auto;
+  border-radius: 30px;
 }
 
 .container-principal .container-ctn .ctn-texts .contents-paragrafy {
@@ -213,7 +236,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 300px;
+  max-width: 200px;
+  width: 100%;
   border: 2px solid;
   -o-border-image: linear-gradient(160deg, #5491DC, #4233A0);
      border-image: linear-gradient(160deg, #5491DC, #4233A0);
