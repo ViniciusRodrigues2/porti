@@ -370,7 +370,7 @@ body{
     flex-wrap: wrap;
 }
 .actions-realy img{
-    max-width: 50px;
+    max-width: 30px;
     flex: 1;
     margin: 0 25px;
 }
@@ -383,7 +383,7 @@ body{
 .container-principal .cursos-feitos .cursos-case-container{
     display: block;
     max-width: 960px;
-    margin: 5em auto;
+    margin: 4em auto;
 }
 .container-principal .cursos-feitos .cursos-case-container .contents-titles{
     width: 100%;
@@ -415,6 +415,8 @@ body{
     justify-content:center;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
 }
 
 .container-principal .cursos-feitos .cursos-case-container .cards-case-container .card{
@@ -422,7 +424,6 @@ body{
     flex-direction: column;
     background-color: transparent;
     padding: 20px;
-    margin-bottom: 20px;
     max-width: 400px;
     // width: 100%;
     flex: 1;
@@ -524,7 +525,8 @@ text-transform: uppercase;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin: 20px;
+    gap: 20px;
 }
 
 .container-principal .cursos-Pelo-youtube .yout-cards-container .card{
@@ -532,7 +534,6 @@ text-transform: uppercase;
     flex-direction: column;
     background-color: transparent;
     padding: 20px;
-    margin: 20px;
     max-width: 400px;
     width: 100%;
     flex: 1;
@@ -676,6 +677,8 @@ text-transform: uppercase;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   margin: 20px;
+   gap: 20px;
 }
 
 .container-principal .aurls-yout-container .cards-contianer-yout .card{
@@ -683,7 +686,6 @@ text-transform: uppercase;
     flex-direction: column;
     background-color: transparent;
     padding: 20px;
-    margin: 20px;
     max-width: 400px;
     width: 100%;
     flex: 1;
