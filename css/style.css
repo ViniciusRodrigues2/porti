@@ -944,9 +944,9 @@ body {
 }
 
 .container-principal .aurls-yout-container .cards-contianer-yout .card .case-btn a {
-  max-width: 120px;
+  max-width: 100px;
   background: linear-gradient(120deg, #4877B1, #27B7DE);
-  padding: 8px 20px;
+  padding: 8px 15px;
   color: #d0e1e4;
   text-transform: uppercase;
   -webkit-box-flex: 1;
@@ -1018,7 +1018,7 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .container-principal .projetc-realy .cards-realy-container {
     display: -ms-grid;
     display: grid;
@@ -1033,27 +1033,23 @@ body {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 780px) {
   .container-principal .projetc-realy {
     display: block;
-    margin: 10px;
     margin: 0 auto;
+    max-width: 1200px;
   }
   .container-principal .projetc-realy .cards-realy-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    gap: 20px;
   }
   .container-principal .projetc-realy .cards-realy-container .card {
-    display: block;
-    margin: 20px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .estudy-show .agroup-actions-container .card .card-progress {
     display: block;
@@ -1077,9 +1073,6 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-
-@media screen and (min-width: 700px) {
   .container-header .nav-container .menu-toogle {
     display: none;
   }
@@ -1102,6 +1095,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
     list-style: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .container-header .menu-desktop .menu-desk a:not(last-child) {
     margin-right: 0px;
@@ -1112,6 +1107,7 @@ body {
     text-transform: uppercase;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    font-size: .75em;
   }
   .container-header .menu-desktop .menu-desk a:hover {
     color: #447c94;

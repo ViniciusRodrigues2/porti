@@ -757,9 +757,9 @@ text-transform: uppercase;
 
 
 .container-principal .aurls-yout-container .cards-contianer-yout  .card .case-btn a{
-    max-width: 120px;
+    max-width: 100px;
     background: linear-gradient(120deg,#4877B1,#27B7DE);
-    padding: 8px 20px;
+    padding: 8px 15px;
     color:#d0e1e4;
     text-transform: uppercase;
     flex: 1;
@@ -833,7 +833,7 @@ text-transform: uppercase;
 
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:750px) {
     .container-principal .projetc-realy .cards-realy-container{
         display: grid;
         grid-template-columns: repeat(1,1fr
@@ -846,22 +846,19 @@ text-transform: uppercase;
 
 
 
-@media screen and (min-width:600px){
+@media screen and (min-width:780px){
    .container-principal .projetc-realy{
         display: block;
-        margin: 10px;
         margin: 0 auto;
+        max-width: 1200px;
     }
     .container-principal .projetc-realy .cards-realy-container{
         display: grid;
-        grid-template-columns: repeat(3,1fr
-        );
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
     }
     .container-principal .projetc-realy .cards-realy-container .card{
-        display: block;
-        margin: 20px;
+        flex: 1;
     }
     .estudy-show .agroup-actions-container .card .card-progress{
        display: block;
@@ -881,10 +878,7 @@ text-transform: uppercase;
         flex-direction: row;
         justify-content: space-between;
     }
-}
 
-
-@media  screen and (min-width: 700px) {
     .container-header .nav-container .menu-toogle{
         display: none;
     }
@@ -905,6 +899,7 @@ text-transform: uppercase;
         display: flex;
         align-items: center;
         list-style: none;
+        flex-wrap: wrap;
     }
     .container-header .menu-desktop .menu-desk a:not(last-child){
         margin-right: 0px;
@@ -914,6 +909,7 @@ text-transform: uppercase;
         color: #61A5C2;
         text-transform: uppercase;
         transition: all .3s ease-in-out;
+        font-size: .75em;
     }
     .container-header .menu-desktop .menu-desk a:hover{
         color: #447c94;
@@ -1005,3 +1001,5 @@ text-transform: uppercase;
         transform: scale(1.4);
     }
 }
+
+
