@@ -329,7 +329,9 @@ body{
     border-image-slice: 1;
 }
 .image-realy{
-    max-width: 500px;
+    max-width: 400px;
+    max-height: 200px;
+    height: 100%;
     width: 100%;
 }
 .image-realy img{
@@ -340,9 +342,18 @@ body{
 }
 .realy-contents .realy-description p{
     font-size: clamp(.90em,1.1em,.90em);
-    color:#b1b1b1#033457;
+    color:#b1b1b1;
     padding: 10px 0;
     color: #a3bec1;
+}
+.cards-realy-container .card .realy-contents .h2s{
+    margin: 10px 0;
+}
+.cards-realy-container .card .realy-contents .h2s h2{
+    font-size:1.2em;
+    color: #248F8F;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 .realy-contents .realy-btn{
    display: flex;
@@ -350,7 +361,7 @@ body{
    justify-content:flex-start;
    flex-wrap: wrap;
    flex: 1;
-   max-width: 200px;
+   margin-top: auto;
 }
 .realy-contents .realy-btn a{
     max-width: 90px;
@@ -822,7 +833,15 @@ text-transform: uppercase;
 
 
 
-
+@media screen and (max-width:500px) {
+    .container-principal .projetc-realy .cards-realy-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr
+        );
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 
@@ -865,31 +884,124 @@ text-transform: uppercase;
 }
 
 
+@media  screen and (min-width: 700px) {
+    .container-header .nav-container .menu-toogle{
+        display: none;
+    }
+    .container-header .nav-container .menu-toogle img{
+        display: none;
+    }
+    
+    .container-header .nav-container .menu-mobile{
+        display: none;
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:500px) {
-    .container-principal .projetc-realy .cards-realy-container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr
-        );
-        justify-content: center;
+    .container-header .menu-desktop{
+        display: flex;
+    }
+    .container-header .menu-desktop .menu-desk{
+        display: flex;
         align-items: center;
+        list-style: none;
+    }
+    .container-header .menu-desktop .menu-desk a:not(last-child){
+        margin-right: 0px;
+        padding: 10px 20px;
+    }
+    .container-header .menu-desktop .menu-desk a{
+        color: #61A5C2;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+    }
+    .container-header .menu-desktop .menu-desk a:hover{
+        color: #447c94;
+    }
+
+
+
+
+    .container-principal .aurls-yout-container .cards-contianer-yout{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+     }
+
+
+     .container-principal .cursos-feitos .cursos-case-container .cards-case-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        grid-template-rows:300px,300px,300px;
+        padding-top: auto;
+    }
+
+    .container-principal .cursos-feitos .cursos-case-container .cards-case-container .card{
+        background-color: #010d20;
+        max-height: 270px;
+        height: 100%;
+        transition: all .3s ease-in-out;
+    }
+    .container-principal .cursos-feitos .cursos-case-container .cards-case-container .card:hover{
+        background: linear-gradient(60deg,#511053,#11556800);
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .container-principal .cursos-feitos .cursos-case-container .cards-case-container .card .case-btn{
+        margin-top: auto;
+    }
+
+
+
+    .container-principal .cursos-Pelo-youtube .yout-cards-container{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       margin-top: 3em;
+
+    }
+    .container-principal .cursos-Pelo-youtube .yout-cards-container .card{
+      max-height: 300px;
+      max-width: 500px;
+      height: 100%;
+      width: 100%;
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .container-principal .cursos-Pelo-youtube .yout-cards-container .card .case-btn{
+       margin-top: auto;
+    }
+
+    .container-principal .cursos-Pelo-youtube .yout-cards-container .card:hover{
+        transform: scale(1.03);
+    }
+
+    .footer .footer-social-midias{
+        cursor: pointer;
+    }
+
+    .cards-realy-container .card{
+        max-width: 300px;
+        max-height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-realy-container .card .image-realy{
+        max-width: 300px;
+        height: 150px;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+    }
+    .cards-realy-container .card .image-realy img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all .3s ease-in-out;
+        transform-origin: right;
+    }
+
+    .cards-realy-container .card .image-realy:hover img{
+        transform: scale(1.4);
     }
 }

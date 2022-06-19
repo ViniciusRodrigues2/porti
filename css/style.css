@@ -407,7 +407,9 @@ body {
 }
 
 .image-realy {
-  max-width: 500px;
+  max-width: 400px;
+  max-height: 200px;
+  height: 100%;
   width: 100%;
 }
 
@@ -421,9 +423,20 @@ body {
 
 .realy-contents .realy-description p {
   font-size: clamp(0.9em, 1.1em, 0.9em);
-  color: #b1b1b1 #033457;
+  color: #b1b1b1;
   padding: 10px 0;
   color: #a3bec1;
+}
+
+.cards-realy-container .card .realy-contents .h2s {
+  margin: 10px 0;
+}
+
+.cards-realy-container .card .realy-contents .h2s h2 {
+  font-size: 1.2em;
+  color: #248F8F;
+  font-weight: 200;
+  text-transform: uppercase;
 }
 
 .realy-contents .realy-btn {
@@ -441,7 +454,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  max-width: 200px;
+  margin-top: auto;
 }
 
 .realy-contents .realy-btn a {
@@ -1005,6 +1018,21 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 500px) {
+  .container-principal .projetc-realy .cards-realy-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .container-principal .projetc-realy {
     display: block;
@@ -1051,18 +1079,131 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
-  .container-principal .projetc-realy .cards-realy-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+@media screen and (min-width: 700px) {
+  .container-header .nav-container .menu-toogle {
+    display: none;
+  }
+  .container-header .nav-container .menu-toogle img {
+    display: none;
+  }
+  .container-header .nav-container .menu-mobile {
+    display: none;
+  }
+  .container-header .menu-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container-header .menu-desktop .menu-desk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    list-style: none;
+  }
+  .container-header .menu-desktop .menu-desk a:not(last-child) {
+    margin-right: 0px;
+    padding: 10px 20px;
+  }
+  .container-header .menu-desktop .menu-desk a {
+    color: #61A5C2;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .container-header .menu-desktop .menu-desk a:hover {
+    color: #447c94;
+  }
+  .container-principal .aurls-yout-container .cards-contianer-yout {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .container-principal .cursos-feitos .cursos-case-container .cards-case-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 300px,300px,300px;
+        grid-template-rows: 300px,300px,300px;
+    padding-top: auto;
+  }
+  .container-principal .cursos-feitos .cursos-case-container .cards-case-container .card {
+    background-color: #010d20;
+    max-height: 270px;
+    height: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .container-principal .cursos-feitos .cursos-case-container .cards-case-container .card:hover {
+    background: linear-gradient(60deg, #511053, #11556800);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+  .container-principal .cursos-feitos .cursos-case-container .cards-case-container .card .case-btn {
+    margin-top: auto;
+  }
+  .container-principal .cursos-Pelo-youtube .yout-cards-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin-top: 3em;
+  }
+  .container-principal .cursos-Pelo-youtube .yout-cards-container .card {
+    max-height: 300px;
+    max-width: 500px;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  .container-principal .cursos-Pelo-youtube .yout-cards-container .card .case-btn {
+    margin-top: auto;
+  }
+  .container-principal .cursos-Pelo-youtube .yout-cards-container .card:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  .footer .footer-social-midias {
+    cursor: pointer;
+  }
+  .cards-realy-container .card {
+    max-width: 300px;
+    max-height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards-realy-container .card .image-realy {
+    max-width: 300px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .cards-realy-container .card .image-realy img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  .cards-realy-container .card .image-realy:hover img {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
 }
 /*# sourceMappingURL=style.css.map */
