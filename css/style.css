@@ -124,9 +124,6 @@ body {
   max-width: 400px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .container-principal .container-ctn .ctn-texts {
@@ -159,13 +156,14 @@ body {
 }
 
 .container-principal .container-ctn .ctn-texts .contents-paragrafy {
-  padding-top: 1.1em;
+  padding: 2em;
 }
 
 .container-principal .container-ctn .ctn-texts .contents-paragrafy p {
   color: #a3bec1;
   letter-spacing: 1.2px;
   line-height: 1.2;
+  text-align: left;
   font-size: clamp(1.3em, 0.9em, 1.5em);
 }
 
